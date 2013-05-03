@@ -1,0 +1,126 @@
+// @ Maintained by Andrew "Chryton" Mauney  
+// @ www.andrewemauney.com  
+// @ andrew.e.mauney@gmail.com  
+// @ www.twitter.com/chrytonbaine  
+// @ Since v0.1  
+
+
+// RESET
+
+p,ul,ol,li,nav,img,h1,h2,h3,h4,h5,h6{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+// END RESET
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700|Open+Sans:400italic,700italic,400,700);
+// REUSABLES
+
+.ib{
+	display: inline-block;
+	zoom: 1;
+	*display: block;
+}
+
+
+//  BEGIN STYLES
+
+body{
+	// background: #95A5A6;
+	background: rgb(46, 48, 47);
+	// background: url('bg1.png');
+}
+
+nav{
+	list-style: none;
+	margin: 15px auto;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	li{
+		.ib;
+		margin-left: 15px;
+		&:first-child{
+			margin-left: 0px;
+		}
+		a{
+			color: #3498DB;
+			text-decoration: none;
+			&:hover{
+				text-decoration: underline
+			}
+		}
+	}
+}
+#sitewrapper{
+	width:1024px;
+	margin:50px auto;
+	padding: 50px;
+	background: #ECF0F1;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.content-area{
+	// width:90%;
+	color: #2C3E50;
+	font-family: 'Open Sans', sans-serif;
+	a{
+		color: #2980B9;
+	}
+	img{
+		// background: #2C3E50;
+		background: #2C3E50;
+		padding:3px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		margin: 0 0 15px 0;
+	}
+	p{
+		margin-bottom: 15px;
+	}
+	.fltlt{
+		float:left;
+		clear: both;
+		margin-right: 15px;
+		margin-top: 3px;
+	}
+	.fltrt{
+		float:right;
+		clear: both;
+		margin-left: 15px;
+		margin-top: 3px;
+	}
+}
+h1,h2,h3,h4,h5,h6{
+	margin-bottom: 20px;
+}
+h1{
+	color: #C0392B;
+	font-family: 'Roboto Slab', serif;
+}
+h2{
+	color: #E67E22;
+	font-family: 'Roboto Slab', serif;
+}
+h3,h4,h5,h6{
+	color: #16A085;
+	font-family: 'Roboto Slab', serif;
+}
+.box-grid{
+	width: 960px;
+	margin: 5px auto;
+	.box{
+		min-width: 155px;
+		max-width: 300px;
+		.ib;
+		margin-left: 15px;
+		vertical-align: top;
+	}
+}
+footer{
+	margin-top: 45px;
+	clear: both;
+}
